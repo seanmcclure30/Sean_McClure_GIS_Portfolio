@@ -1,2 +1,2 @@
-# GIS_Portfolio
+# Sean_McClure_GIS_Portfolio
 Professional GIS Portfolio Created for University of Wisconsin - Maddison master's course GEOG572
