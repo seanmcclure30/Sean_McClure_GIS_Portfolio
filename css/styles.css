@@ -36,3 +36,9 @@
     max-height: 500px; /* Limit the height to 500px */
     object-fit: contain; /* Ensures the image scales proportionally */
 }
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+</style>
