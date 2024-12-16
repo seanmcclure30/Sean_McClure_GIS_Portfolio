@@ -1,7 +1,7 @@
 /* Default styles (for larger screens) */
 .content-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align images with the title text */
     margin: 2rem auto;
     padding: 0 2rem;
 }
@@ -9,7 +9,7 @@
 .content-section img {
     max-width: 300px;
     height: auto;
-    margin: 0 auto;
+    margin-left: auto; /* Ensure proper spacing from text */
 }
 
 .content-section .text {
