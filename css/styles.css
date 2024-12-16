@@ -16,6 +16,12 @@
     margin-bottom: 1rem;
 }
 
+/* Image carousel adjustments */
+.carousel-inner img {
+    max-height: 500px; /* Limit the height of carousel images */
+    object-fit: contain; /* Ensures the image scales proportionally */
+}
+
 /* Mobile adjustments */
 @media (max-width: 991px) {
     .content-section {
