@@ -1,7 +1,7 @@
 /* Default styles (for larger screens) */
 .content-section {
     display: flex;
-    align-items: flex-start; /* Align images with the title text */
+    align-items: flex-start; /* Aligns the image to the top of the title text */
     margin: 2rem auto;
     padding: 0 2rem;
 }
@@ -9,11 +9,11 @@
 .content-section img {
     max-width: 300px;
     height: auto;
-    margin-left: auto; /* Ensure proper spacing from text */
+    margin-left: auto;
 }
 
-.content-section .text {
-    margin-right: 20px;
+.content-section h4 {
+    margin-bottom: 1rem;
 }
 
 /* Mobile adjustments */
@@ -29,13 +29,7 @@
         margin-bottom: 10px;
     }
 
-    .content-section .text {
-        margin: 0 auto 10px;
+    .content-section h4 {
+        margin-bottom: 1rem;
     }
-}
-
-/* Carousel images */
-.carousel-inner img {
-    max-height: 500px; /* Limit the height to 500px */
-    object-fit: contain; /* Ensures the image scales proportionally */
 }
