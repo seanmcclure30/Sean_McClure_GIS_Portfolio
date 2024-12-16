@@ -1,0 +1,11 @@
+/* Default styles for desktop */
+body {
+    font-size: 16px;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
