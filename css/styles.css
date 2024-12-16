@@ -2,36 +2,39 @@
 .content-section {
     display: flex;
     align-items: center;
-    margin-top: 2rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
 }
 
 .content-section img {
     max-width: 300px;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .content-section .text {
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Mobile adjustments */
 @media (max-width: 991px) {
     .content-section {
         display: block;
-        margin-top: 2rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
     }
 
     .content-section img {
-        max-width: 300px;
+        max-width: 100%; /* Full width for mobile */
         margin-bottom: 10px;
     }
 
     .content-section .text {
-        margin-left: 0;
+        margin: 0 auto 10px;
     }
 }
-/*carousel images*/
+
+/* Carousel images */
 .carousel-inner img {
     max-height: 500px; /* Limit the height to 500px */
     object-fit: contain; /* Ensures the image scales proportionally */
