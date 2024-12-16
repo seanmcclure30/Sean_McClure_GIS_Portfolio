@@ -33,3 +33,10 @@
         margin-bottom: 1rem;
     }
 }
+
+}
+/*carousel images*/
+.carousel-inner img {
+    max-height: 500px; /* Limit the height to 500px */
+    object-fit: contain; /* Ensures the image scales proportionally */
+}
