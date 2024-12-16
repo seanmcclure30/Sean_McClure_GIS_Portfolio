@@ -1,11 +1,23 @@
-/* Default styles for desktop */
-body {
-    font-size: 16px;
-}
-
-/* Styles for mobile screens */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-}
+        /* Mobile-first default styles */
+        .content-section {
+            margin-top: 2rem;
+        }
+        .content-section img {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        /* Larger screen adjustments */
+        @media (min-width: 992px) {
+            .content-section {
+                display: flex;
+                align-items: center;
+            }
+            .content-section img {
+                max-width: 300px;
+                margin: 0;
+            }
+            .content-section .text {
+                margin-left: 20px;
+            }
+        }
