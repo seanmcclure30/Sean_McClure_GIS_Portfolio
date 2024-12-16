@@ -1,22 +1,27 @@
 /* Default styles (for larger screens) */
-.content-section {
+.professional-section {
     display: flex;
-    align-items: flex-start; /* Aligns the image to the top of the title text */
+    align-items: flex-end; /* Aligns the bottom of text with the bottom of the image */
     margin: 2rem auto;
     padding: 0 2rem;
 }
 
-.content-section img {
-    max-width: 300px;
+.professional-section img {
+    max-width: 200px;
     height: auto;
-    margin-left: auto;
+    margin-bottom: 0;
 }
 
-.content-section h4 {
-    margin-bottom: 1rem;
+.professional-section p {
+    margin-bottom: 0; /* Ensures the text ends aligned with the image */
 }
 
-/* Image carousel adjustments */
+.professional-section a {
+    display: block;
+    margin: 1rem auto 0; /* Centers the button under the image */
+}
+
+/* Carousel images */
 .carousel-inner img {
     max-height: 500px; /* Limit the height of carousel images */
     object-fit: contain; /* Ensures the image scales proportionally */
@@ -24,18 +29,23 @@
 
 /* Mobile adjustments */
 @media (max-width: 991px) {
-    .content-section {
+    .professional-section {
         display: block;
         margin: 2rem auto;
         padding: 0 1rem;
     }
 
-    .content-section img {
+    .professional-section img {
         max-width: 100%; /* Full width for mobile */
         margin-bottom: 10px;
     }
 
-    .content-section h4 {
-        margin-bottom: 1rem;
+    .professional-section p {
+        margin-top: 10px;
+    }
+
+    .professional-section a {
+        margin: 10px auto;
+        display: block;
     }
 }
