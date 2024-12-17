@@ -3,165 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Sean McClure</title>
+    <title>Welcome to Sean McClure's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #A9E2F3;
-            border: 10px solid white;
+            background-image: url('assets/landing_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .landing-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .landing-container h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .landing-container p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .landing-container .btn {
+            margin: 0 10px;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <!-- Header -->
-            <div class="col-12 text-center">
-                <h1>Sean McClure</h1>
-                <h3>GIS Specialist</h3>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <!-- Image Carousel -->
-            <div class="col-12">
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/Carousel1.png" class="d-block w-100" alt="University_Alabama2021">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/Carousel2.png" class="d-block w-100" alt="Guerneville_CA_Land_Parcels2021">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/Carousel3.png" class="d-block w-100" alt="Iberian_CO2_Emission2019_2024">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/Carousel4.png" class="d-block w-100" alt="Fiber_Network_Example2023">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Professional Description Section -->
-        <div class="row align-items-center professional-section mt-4">
-            
-            <div class="col-lg-4 text-center">
-                <img src="assets/Sean_McClure_headshot.png" class="img-fluid rounded" alt="Sean McClure">
-                <a href="assets/Sean_McClure_Resume.pdf" download class="btn btn-primary mt-3">Sean McClure's Resume PDF</a>
-            </div>
-            
-            <div class="col-lg-8">
-                <p>
-                    Sean McClure is a GIS Specialist with a passion for spatial analysis and cartographic design.
-                    With years of experience in geographic information systems, Sean has contributed to impactful projects
-                    in urban planning, environmental research, archaeological analysis, and more. His expertise spans data visualization, geospatial
-                    data management, and remote sensing analysis. Below are examples of the various project Sean's has worked on spanning from 2021 to presnt.
-                    If you wish to contact Sean McClure, feel free to email (seanmcclure30@gmail.com) or to connect to Sean's LinkedIn account with the link
-                    at the bottom of the page.
-                </p>
-            </div>
-        </div>
-
-        <!-- Content Sections -->
-        <div class="row content-section">
-            <div class="col-lg-6">
-                <h4>Iberian Peninsula CO2 Emission StoryMap</h4>
-                <p>
-                    This ArcGIS Online StoryMap analyzes carbon dioxide atmospheric concentrations in the Iberian Peninsula from 2021 to 2023
-                    through multivariate mapping and an organized cartographic workflow.
-                    It discusses the relationship between CO2 emissions and average annual temperatures,
-                    along with influencing factors such as government spending on climate initiatives and the Covid-19 pandemic.
-                    This project was completed as part of the curriculum for the Advanced GIS Certification graduate-level program
-                    offered by the University of Wisconsin-Madison
-                </p>
-                <a href="https://arcg.is/0e0DuO0" class="btn btn-primary mt-3" target="_blank">View StoryMap</a>
-            </div>
-            <div class="col-lg-6 text-center">
-                <img src="assets/CO2_Emissions.png" class="img-fluid rounded" alt="CO2 Emissions of the Iberian Peninsula">
-            </div>
-        </div>
-
-        <div class="row content-section">
-            <div class="col-lg-6">
-                <h4>Coffee Tour of Eau Claire, WI StoryMap</h4>
-                <p>
-                    This ArcGIS Online StoryMap offers a guided tour of notable coffee shops and cafes in Eau Claire, Wisconsin.
-                    The project demonstrates the principles of visual cognition and spatiotemporal representation.
-                    The StoryMap introduces a variety of local coffeehouses and other cultural hubs of this Wisconsin community.
-                    The tour highlights the city's unique charm while providing optimal walking and biking routes between stops.
-                    This project was completed as part of the curriculum for the Advanced GIS Certification graduate-level program
-                    offered by the University of Wisconsin-Madison
-                </p>
-                <a href="https://arcg.is/0CivDC" class="btn btn-primary mt-3" target="_blank">View StoryMap</a>
-            </div>
-            <div class="col-lg-6 text-center">
-                <img src="assets/Coffee_StoryMap.png" class="img-fluid rounded" alt="Coffee Tour of Eau Claire">
-            </div>
-        </div>
-
-        <div class="row content-section">
-            <div class="col-lg-6">
-                <h4>Politcal and Geographic Topography of Africa</h4>
-                <p>
-                    This map layout displays the political and geographic topography of the African continent in 2023.
-                    The political boundaries of this map ranges from the country level down to the town level.
-                    Geographic features such as mountain ranges, deserts, and rivers are also labeled to provide a comprehensive
-                    depiction of the continent from a macro scale. The primary focus of this project was managing complex and
-                    dense label placements while adhering to cartographic generalization principles to ensure clarity and
-                    readability of the map. This project was completed as part of the curriculum for the
-                    Advanced GIS Certification graduate-level program offered by the University of Wisconsin-Madison
-                </p>
-                <a href="assets/African_Political_map_SeanMcClure.pdf" download class="btn btn-primary mt-3">African Political Map PDF</a>
-            </div>
-            <div class="col-lg-6 text-center">
-                <img src="assets/African_Political_map.png" class="img-fluid rounded" alt="African Political Map">
-            </div>
-        </div>
-
-        <div class="row content-section">
-            <div class="col-lg-6">
-                <h4>Environmental and Archaeological Analysis Moundville, AL</h4>
-                <p>
-                    This project focuses on the analysis of LIDAR data collected in 2021 from the Moundville, AL
-                    National Historical Landmark. A digital elevation model (DEM) and hillshade raster files were created
-                    from the LIDAR data to examine topographic changes, including erosional damage to mound structures and
-                    potential undiscovered anthropogenic deposits. The analysis of the environmental spatial data revealed
-                    that the expanding southern boundary of the Hemphill River Bend drainage basin is causing significant
-                    erosional decay, affecting several mound structures. The delineated areas of erosion were mapped with
-                    polyline feature classes to highlight the ongoing erosional damage and deflation of the mounds.
-                    
-                    These results provided an updated understanding of the site's topography and were used by the University
-                    of Alabama to secure grant funding from the US Army Corp of Engineers to begin efforts to mitigate the
-                    erosional damage in 2022. 
-
-                </p>
-                <a href="assets/Moundville_Lidar_SeanMcClure.pdf" download class="btn btn-primary mt-3">Moundville Lidar Analysis PDF</a>
-            </div>
-            <div class="col-lg-6 text-center">
-                <img src="assets/Moundville_Lidar.png" class="img-fluid rounded" alt="Moundville Lidar">
-            </div>
-        </div>
+    <div class="landing-container">
+        <h1>Welcome to Sean McClure's Portfolio</h1>
+        <p>Explore my work in GIS, spatial analysis, and cartographic design.</p>
+        <a href="portfolio.html" class="btn btn-primary">Enter Portfolio</a>
+        <a href="https://www.linkedin.com/in/sean-mcclure-6a18a418a/" class="btn btn-secondary" target="_blank">LinkedIn</a>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Footer with LinkedIn Button and Copyright -->
-    <footer class="text-center mt-4">
-    <a href="https://www.linkedin.com/in/sean-mcclure-6a18a418a/" target="_blank" class="btn btn-primary">
-        <img src="assets/linkedin_logo.png" alt="LinkedIn Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">   
-    </a>
-    <div class="footer-text text-start">
-        <p>© Sean McClure 2024</p>
-        <p>All images are owned by Sean McClure unless stated otherwise.</p>
-    </div>
-    </footer>
 </body>
 </html>
